@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLBanHang" Class="QLVTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7P62KP4;Initial Catalog=QLBanHang;Integrated Security=True" SettingsObjectName="QuanLyBanHang.Properties.Settings" SettingsPropertyName="QLBanHangConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VATTU" Member="VATTUs">
+    <Type Name="VATTU">
+      <Column Name="Mavtu" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenVTu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Dvtinh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Phantram" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHACC" Member="NHACCs">
+    <Type Name="NHACC">
+      <Column Name="MaNCC" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenNCC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Diachi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Dienthoai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
